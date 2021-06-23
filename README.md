@@ -1,6 +1,6 @@
 # Infinite Scroll
 
-An image gallery with infinte scrolls created using JavaScript, Tailwind css.
+An image gallery with infinite scrolls created using JavaScript, Tailwind css.
 
 Collaborated with unsplash API
 
