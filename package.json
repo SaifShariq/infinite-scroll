@@ -1,0 +1,19 @@
+{
+  "name": "infinity_scroll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d public",
+    "watch": "postcss public/style.css -o public/build/tailwind.css --watch",
+    "build": "postcss public/style.css -o public/build/tailwind.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "gh-pages": "^3.1.0",
+    "postcss-cli": "^7.1.2",
+    "tailwindcss": "^1.7.6"
+  }
+}
