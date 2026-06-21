@@ -1,8 +1,8 @@
 const image_grid = document.querySelector("#image-grid");
 const double_loader = document.querySelector("#double_ring_loader");
 const infinity_loader = document.querySelector("#infinity-loader");
-const API_KEY = 'UL-h5FXcLTIFrqzF-DwHsebL-MuDG_iOf45DCNGLykc';
-const apiURL = `https://api.unsplash.com/photos/random?client_id=${API_KEY}&count=`;
+// The client no longer contains the Unsplash API key. Requests go to the local proxy endpoint.
+const apiURL = `/api/photos?count=`;
 
 // Some flag Variables
 let imageLoadedCount = 0;
@@ -45,7 +45,7 @@ function displayPhotos(data) {
     });
 }
 
-// Getting Photos from Unsplash API
+// Getting Photos from the server-side proxy which uses an environment variable for the API key
 const getPhotosFromAPI = async (count=20) => {
     try {
         imageLoadedCount = 0;
